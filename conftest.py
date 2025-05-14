@@ -27,8 +27,8 @@ def pytest_addoption(parser):
     parser.addoption(
         "--domain",
         action="store",
-        default="https://cloud.scione.ai",
-        help="测试域名，默认为https://cloud.scione.ai"
+        default=None
+        help="测试域名"
     )
 
 def pytest_configure(config):
